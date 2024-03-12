@@ -1,0 +1,1209 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Unbounded";
+    scroll-behavior: smooth;
+    transition: .6s;
+}
+
+/* шрифты */
+@font-face {
+    font-family: "Unbounded";
+    src: url(../fonts/Unbounded-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(../fonts/Unbounded-Light.ttf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(../fonts/Unbounded-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Unbounded";
+    src: url(../fonts/Unbounded-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "spaceranger";
+    src: url(../fonts/spaceranger.otf);
+}
+
+
+/* ширина контета */
+.w1650 {
+    width: 1650px;
+    margin: 0 auto;
+}
+
+.py {
+    padding: 43px 0;
+}
+
+.title {
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-family: "spaceranger";
+    font-size: 78px;
+    color: #DC4F23;
+}
+
+a {
+    font-size: 20px;
+}
+
+/* шапка */
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #DC4F23;
+    padding: 12px 0;
+}
+
+.header-in nav {
+    display: flex;
+    gap: 46px;
+}
+
+.header-in nav a {
+    color: #2D4059;
+}
+
+.account {
+    display: flex;
+    gap: 29px;
+}
+
+.filter-cat {
+    display: none;
+}
+
+/* баннер */
+
+.banner-about {
+    display: flex;
+    justify-content: space-between;
+    margin: 46px 0 52px;
+}
+
+.banner-about-text {
+    width: 45%;
+}
+
+.banner-btn a {
+    padding: 21px 41px;
+    border: 1px solid #DC4F23;
+    border-radius: 31px;
+    color: #DC4F23;
+}
+
+.banner-btn a::after {
+    content: url(../img/main/header/Arrow.png);
+    padding-left: 41px;
+}
+
+.banner-btn:hover {
+    transform: translateX(15px);
+}
+
+.sm-banner {
+    display: none;
+}
+
+
+
+.about-hr {
+    width: 20%;
+    border: 2px solid #DC4F23;
+    margin-bottom: 45px;
+}
+
+.abouts {
+    display: flex;
+    position: relative;
+}
+
+.about-txt h1 {
+    font-size: 165px;
+    color: #ECECEC;
+}
+
+.about-name h2 {
+    font-size: 78px;
+    color: #DC4F23;
+    font-weight: 200;
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    font-family: "spaceranger";
+}
+
+.abouts:hover h2 {
+    transform: translateX(20px);
+}
+
+.about-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-comm {
+    width: 95%;
+}
+
+.about-txt1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* блог */
+.blogs {
+    display: flex;
+    justify-content: space-between;
+    gap: 39px;
+}
+
+.blog h3 {
+    font-family: "spaceranger";
+    color: #2D4059;
+    font-weight: 200;
+}
+
+.blog p {
+    font-size: 12px;
+    color: #9D9D9D;
+    padding: 13px 0 35px;
+}
+
+/* .blog a::after{
+    content: url(../img/main/header/Arrow.png);
+} */
+.more {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 2px solid #DC4F23;
+    padding-bottom: 10px;
+}
+
+.blog:hover .more {
+    transform: translateY(-10px);
+}
+
+
+.more a {
+    color: #DC4F23;
+}
+
+
+
+/* окнтакты */
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-forms-full {
+    display: flex;
+    gap: 90px;
+}
+
+.contact-social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    gap: 66px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-about {
+    width: 502px;
+    margin-bottom: 125px;
+}
+
+.contact-num h2 {
+    padding: 14px 0 30px;
+    font-size: 36px;
+    color: #DC4F23;
+}
+
+.contact-num {
+    margin-top: 80px;
+}
+
+.form input[type="text"],
+.form input[type="number"],
+.form textarea {
+    border: none;
+    border-bottom: 2px solid #DC4F23;
+    outline: none;
+    font-size: 16px;
+}
+
+.form button {
+    border: 1px solid #DC4F23;
+    border-radius: 13px;
+    padding: 9px 0;
+    background-color: transparent;
+    font-size: 20px;
+    color: #DC4F23;
+}
+
+.contact-num h2:hover {
+    transform: translateX(20px);
+}
+
+.form button:hover {
+    background-color: #DC4F23;
+    color: #E0E0E0;
+}
+
+
+/* футер */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 2px solid #DC4F23;
+}
+
+
+/* каталог */
+.title-catalog {
+    display: flex;
+    gap: 610px;
+}
+
+.title-catalog h2 {
+    color: #DC4F23;
+    font-size: 32px;
+}
+
+.cat-back {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.cat-back a {
+    color: #DC4F23;
+}
+
+
+/* фильтр */
+.filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter h3 {
+    padding: 63px 0 32px;
+}
+
+.filter a {
+    font-size: 16px;
+    padding: 12px 23px;
+    border: 1px solid #2D4059;
+    border-radius: 23px;
+    color: #2D4059;
+    background-color: #ffffff;
+}
+.filter .act{
+    background-color: #2D4059;
+    color: #ffffff;
+}
+.cat-filter a:hover, .men-filter a:hover{
+    background-color: #2D4059;
+    color: #ffffff;
+}
+.bag-back:hover, .cat-back:hover, .item-back:hover{
+    transform: translateX(-10px);
+}
+
+.cat-filter,
+.men-filter {
+    display: flex;
+    gap: 10px;
+}
+
+.slider-container {
+    width: 300px;
+
+}
+.pag a:hover{
+    transform: translateX(10px);
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.price-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-in {
+    width: 96px;
+    padding: 4px 12px;
+    border: 1px solid #2D4059;
+    border-radius: 12px;
+}
+
+.card {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.card-img:hover img {
+    transform: scale(1.1);
+    /* увеличение изображения на 20% при наведении */
+}
+
+.cat-bag {
+    position: absolute;
+    left: 1%;
+    top: 5%;
+}
+
+.cat-like {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+}
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 47px 0 61px;
+    gap: 28px;
+}
+
+.cat-title {
+    position: absolute;
+    left: 2%;
+    bottom: 20px;
+    width: 380px;
+    height: 80px;
+}
+
+.item-arrow {
+    display: flex;
+    gap: 10px;
+}
+
+.cat-title h3 {
+    font-family: 'spaceranger';
+    font-weight: 200;
+    color: #DC4F23;
+    font-size: 25px;
+}
+
+.cat-title p {
+    color: #DC4F23;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.arrow {
+    position: absolute;
+    right: 2%;
+}
+
+
+.act a {
+    color: #DC4F23;
+}
+
+
+
+.pag {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pag a::after {
+    content: url(../img/catalog/Arrow-catpng.png);
+    padding-left: 20px;
+}
+
+.pag h2 {
+    font-size: 40px;
+    color: #E0E0E0;
+}
+
+.pag a {
+    display: flex;
+    align-items: center;
+    padding: 24px 99px;
+    border: 2px solid #DC4F23;
+    color: #DC4F23;
+    border-radius: 31px;
+    font-size: 16px;
+}
+
+/* товар */
+.tovar {
+    display: flex;
+    width: 100%;
+}
+
+.tovar-about {
+    width: 70%;
+    position: sticky;
+    top: 0;
+}
+
+.tovar-about a {
+    font-size: 15px;
+    color: #2D4059;
+}
+
+.tovar-about h2 {
+    font-family: "spaceranger";
+    font-weight: 200;
+    font-size: 36px;
+    color: #DC4F23;
+    padding: 48px 0 20px;
+}
+
+.about-jac {
+    padding-bottom: 29px;
+    border-bottom: 1px solid #9D9D9D;
+}
+
+.colors {
+    display: flex;
+    gap: 13px;
+}
+
+.color {
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.color:hover {
+    border: 1px solid black;
+}
+
+.color-act {
+    border: 1px solid black;
+}
+
+.white {
+    width: 37px;
+    height: 37px;
+    background-color: #E0E0E0;
+    border-radius: 3px;
+}
+
+.black {
+    width: 37px;
+    height: 37px;
+    background-color: black;
+    border-radius: 3px;
+}
+
+.orange {
+    width: 37px;
+    height: 37px;
+    background-color: #DC4F23;
+    border-radius: 3px;
+}
+
+.sizes {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    color: #2D4059;
+    cursor: pointer;
+}
+
+.tovar-har {
+    margin-top: 45px;
+}
+
+.tovar-har p {
+    padding-bottom: 20px;
+}
+
+.size {
+    height: 49px;
+    width: 49px;
+    border-radius: 3px;
+}
+
+.size p:hover {
+    border: 1px solid #DC4F23;
+    border-radius: 3px;
+}
+
+.size p {
+    padding: 8px;
+}
+
+.act-size {
+    border: 1px solid #DC4F23;
+    border-radius: 3px;
+}
+
+.colors,
+.sizes {
+    margin-bottom: 35px;
+}
+
+.tovar-buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tovar-buy-btn a::after {
+    content: url(../img/main/header/Arrow.png);
+    padding-left: 15px;
+}
+
+.tovar-buy h4 {
+    color: #DC4F23;
+    font-size: 36px;
+}
+
+.pos {
+    font-size: 12px;
+    color: #9D9D9D;
+}
+
+.pos-higl {
+    color: #2D4059;
+}
+
+.tovar-buy-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tovar-buy-btn a {
+    font-size: 16px;
+    color: #DC4F23;
+    border: 1px solid #DC4F23;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+.tovar-buy-btn a:hover {
+    transform: translateY(-10px);
+}
+
+.tovar-buy-btn img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.tovar-buy h2 {
+    font-family: "Unbounded";
+    margin-bottom: 20px;
+}
+
+.item-title {
+    display: none;
+}
+
+/* корзина */
+.bag-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bag-title h2 {
+    font-size: 36px;
+    color: #DC4F23;
+    font-family: "spaceranger";
+    font-weight: 200;
+    margin-left: 200px;
+}
+
+.bag-title a {
+    font-size: 20px;
+    color: #DC4F23;
+}
+
+.tovar-nav-mob {
+    font-size: 15px;
+}
+
+.bag-back {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.in-bag {
+    display: flex;
+    gap: 30px;
+    border-bottom: 1px solid #9D9D9D;
+    padding: 30px 0;
+    width: 45%;
+}
+
+.inbag-full {
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    margin: 70px 0;
+}
+
+.buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    border-left: 1px solid #b9b9b9;
+}
+
+.buy a {
+    background-color: #DC4F23;
+    color: #ffffff;
+    padding: 28px 66px;
+    border: 1px solid #DC4F23;
+    border-radius: 38px;
+}
+
+.buy a::after {
+    content: url(../img/bag/Arrow.png);
+    padding-left: 20px;
+}
+
+.in-bag-name {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.buy:hover {
+    transform: translateY(-10px);
+}
+
+.in-bag-price {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.in-bag-price h2 {
+    color: #DC4F23;
+}
+
+.in-bag-name h2 {
+    font-size: 24px;
+    color: #DC4F23;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
+.count-full {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.count {
+    display: flex;
+    border: 1px solid #DC4F23;
+    border-radius: 13px;
+}
+
+.count p {
+    padding: 12px;
+}
+
+.price-count h2 {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.blue {
+    color: #2D4059;
+}
+
+.orange-price {
+    color: #DC4F23;
+}
+
+.big {
+    font-size: 30px;
+}
+
+.header-bag {
+    display: none;
+}
+
+@media screen and (max-width: 391px) {
+    p {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 31px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .py {
+        padding: 16px 0;
+    }
+
+    .w1650 {
+        width: 370px;
+    }
+
+    .logo-header img {
+
+        width: 60%;
+    }
+
+    .header-in {
+        padding: 7px 0;
+    }
+
+    .banner-about {
+        flex-direction: column;
+    }
+
+    .header-in nav,
+    .account {
+        display: none;
+    }
+
+    .header-bag {
+        display: block;
+    }
+
+    .menu {
+        padding-left: 5px;
+    }
+
+    .full-banner {
+        display: none;
+    }
+
+    .sm-banner {
+        display: block;
+    }
+
+    .banner-about-text {
+        width: 100%;
+    }
+
+    .banner-about {
+        margin: 17px 0 37px;
+    }
+
+    .banner-btn {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .banner-btn a {
+        padding: 21px 49px;
+    }
+
+
+
+    .abouts {
+        flex-direction: column;
+    }
+
+    .about-hr {
+        width: 20%;
+        border: 2px solid #DC4F23;
+        margin-bottom: 20px;
+    }
+
+    .about-name h2 {
+        font-size: 35px;
+    }
+
+    .about-txt1 h1 {
+        font-size: 55px;
+    }
+
+    .about-name h2 {
+        top: 7%;
+        left: 0;
+        width: 100%;
+    }
+
+
+
+    .blogs {
+        flex-wrap: wrap;
+        gap: 17px;
+
+        position: relative;
+        height: 930px;
+    }
+
+    .blog {
+        width: 45%;
+        height: auto;
+    }
+
+    .blog-img img {
+        width: 99%;
+    }
+
+    .blogs h3 {
+        font-size: 15px;
+    }
+
+    .blogs a {
+        font-size: 13px;
+    }
+
+    .blog3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    .blog2 {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    .contact-about {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+
+
+    .contact-forms-full {
+        gap: 0;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contact-num h2 {
+        font-size: 28px;
+        padding: 8px 0 18px;
+    }
+
+    .contact-num {
+        margin-top: 10px;
+    }
+
+    .contact-forms-full {
+        flex-direction: column;
+    }
+
+    .contact-social {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+
+
+    /* каталог */
+    .filter {
+        display: none;
+    }
+
+    .filter-cat {
+        display: inline;
+    }
+
+    .title-catalog {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .title-catalog h2 {
+        font-size: 24px;
+        margin-right: 40px;
+    }
+
+    .cat-back a {
+        font-size: 15px;
+    }
+
+    .cat-back {
+        gap: 10px;
+    }
+
+    .cat-back img {
+        width: 30%;
+    }
+
+
+    .catalog {
+        gap: 14px;
+        padding: 24px 0 35px;
+    }
+
+    .card {
+        width: 172px;
+    }
+
+    .card-img img {
+        width: 99%;
+    }
+
+    .card-about img {
+        width: 20%;
+    }
+
+    .cat-title {
+        height: 30px;
+    }
+
+    .cat-title h3 {
+        font-size: 12px;
+        width: 180px;
+    }
+
+    .cat-title p {
+        margin-bottom: 5px;
+        font-size: 10px;
+    }
+
+    .cat-like {
+        right: 1%;
+    }
+
+    .pag h2 {
+        display: none;
+    }
+
+    .pag a {
+        font-size: 12px;
+        padding: 15px 53px;
+        border: 1px solid #DC4F23;
+    }
+
+    .pag {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+
+    /* карточка товара */
+    .tovar {
+        flex-direction: column;
+    }
+
+    .tovar-img {
+        width: 390px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        gap: 10px;
+    }
+
+    .tovar-img img {
+        max-width: 90%;
+        display: block;
+    }
+
+    .item-back img {
+        width: 30%;
+    }
+
+    .item-back a {
+        font-size: 15px;
+        color: #DC4F23;
+    }
+
+    .item-title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+    }
+
+    .tovar-nav-mob a {
+        font-size: 10px;
+        color: #DC4F23;
+    }
+
+    .tovar-nav {
+        display: none;
+    }
+
+    .tovar-buy {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        background-color: white;
+    }
+
+    .tovar-buy h4 {
+        font-size: 22px;
+        width: 135px;
+    }
+
+    .size p {
+        padding: 13px;
+    }
+
+    .tovar-about {
+        width: 100%;
+    }
+
+    .tovar-about h2 {
+        font-size: 24px;
+        padding: 22px 0 12px;
+    }
+
+    .tovar-har {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tovar-buy-btn a {
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        padding: 18px;
+    }
+
+    .tovar-buy-btn {
+        margin-bottom: 20px;
+        gap: 5px;
+    }
+
+    .tovar-buy-btn img {
+        width: 32px;
+    }
+
+    .colors,
+    .sizes {
+        gap: 0;
+    }
+
+    .item-footer {
+        padding-bottom: 90px;
+    }
+
+    /* корзина */
+    .inbag-full {
+        margin: 30px 0;
+    }
+
+    .in-bag {
+        gap: 10px;
+    }
+
+    .bag-back {
+        gap: 5px;
+    }
+
+    .bag-back img {
+        width: 25%;
+    }
+
+    .bag-back a {
+        font-size: 15px;
+    }
+
+    .buy {
+        width: 100%;
+        position: fixed;
+        bottom: 5px;
+        border: none;
+    }
+
+    .buy a {
+        font-size: 16px;
+        padding: 20px 70px;
+    }
+
+    .bag-title h2 {
+        margin-left: 0;
+        margin-right: 60px;
+    }
+
+    .in-bag-img img {
+        width: 176px;
+    }
+
+    .in-bag-name h2 {
+        width: 160px;
+        font-size: 15px;
+    }
+
+    .in-bag-name {
+        gap: 0px;
+    }
+
+    .colors {
+        margin-bottom: 20px;
+    }
+
+    .in-bag-price {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .close img {
+        width: 20px;
+    }
+
+    .price-count h2 {
+        font-size: 17px;
+    }
+
+    .big {
+        font-size: 25px;
+    }
+}
